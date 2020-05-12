@@ -1,0 +1,142 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    background: #ff5d56;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+h2 {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 15px;
+}
+
+
+p {
+    background: #FFFFFF;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    height: 5vh;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1.35vh 16px 1.35vh;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: white;
+    background-color: #ff5d56;
+}
+
+#image {
+    width: 600px;
+    height: 450px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+}
+
+.sidedetails {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #EEE;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidedetails a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidedetails a:hover {
+  color: #ff5d56;
+}
+
+.sidedetails .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidedetails {padding-top: 15px;}
+  .sidedetails a {font-size: 18px;}
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #ff5d56;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#container {
+    position: absolute;
+    top: 50px;
+    padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+

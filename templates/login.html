@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <title>Login</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href="../">Home</a></li>
+            <li><a href="../about">About</a></li>
+            <li style="float: right"><a href="/">Login</a></li>
+        </ul>
+
+        <form action="{{ url_for('handle_login') }}" method="post">
+            <div id="container">
+                <label><b>Username</b>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                </label>
+                <label><b>Password</b>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                </label>
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </body>
+</html>
