@@ -2,6 +2,8 @@ var markers = [];
 var newMarker;
 
 function openDetails(url, category, time, description) {
+    closeNewReport()
+
     // Open the Side Window
     document.getElementById("sideDetails").style.width = "630px";
 
@@ -31,8 +33,10 @@ function openNewReport() {
         newMarker.setMap(null)
     }
 
+    closeDetails()
+
     // Open the Side Window
-    document.getElementById("sideDetails").style.width = "630px";
+    document.getElementById("newReport").style.width = "630px";
 
     newMarker = new google.maps.Marker({
         position: mapInstance.getCenter(),
@@ -49,5 +53,5 @@ function closeNewReport() {
     }
 
     // Close the Side Window
-    document.getElementById("sideDetails").style.width = "0";
+    document.getElementById("newReport").style.width = "0";
 }

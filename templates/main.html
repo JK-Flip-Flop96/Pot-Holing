@@ -90,10 +90,27 @@
 
          <div id="newReport" class="sidedetails">
              <a href="javascript:void(0)" class="closebtn" onclick="closeNewReport()">&times;</a>
-             <img id="image">
-             <h1 id="category"></h1>
-             <h2 id="description_title">Description</h2>
-             <p id="description"></p>
+             <form>
+                 <label for="category_picker"><b>Category</b><p></p>
+                 <select id="category_picker" required>
+                     <option value="Pothole">Pothole</option>
+                     <option value="Overflowing Bin">Overflowing Bin</option>
+                     <option value="Streetlight Out">Streetlight Out</option>
+                     <option value="Vandalism">Vandalism</option>
+                     <option value="Fly Tipping">Fly Tipping</option>
+                     <option value="Dog Waste">Dog Waste</option>
+                     <option value="Uncollected Bins">Uncollected Bins</option>
+                     <option value="Parking Offenses">Parking Offenses</option>
+                     <option value="Abandoned Vehicles">Abandoned Vehicles</option>
+                     <option value="Other">Other</option>
+                 </select>
+                 </label>
+                 <p></p>
+                 <label><b>Description</b>
+                    <input type="text" placeholder="Enter A Description" name="des" required>
+                 </label>
+                 <button type="submit">Submit</button>
+             </form>
          </div>
     </body>
 </html>
