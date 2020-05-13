@@ -5,7 +5,7 @@ import pyrebase
 
 # Setup for Firebase
 config = {
-  "apiKey": "AIzaSyDElU0J8uRQtX9da0jgVPIgkk9t6pPmqIo",
+  "apiKey": "[KEY]",
   "authDomain": "pot-holing.firebaseapp.com",
   "databaseURL": "https://pot-holing.firebaseio.com",
   "storageBucket": "pot-holing.appspot.com"
@@ -25,7 +25,7 @@ storage = firebase.storage()
 app = Flask(__name__)
 
 # Setup for Google Maps
-app.config['GOOGLEMAPS_KEY'] = "AIzaSyDElU0J8uRQtX9da0jgVPIgkk9t6pPmqIo"
+app.config['GOOGLEMAPS_KEY'] = "[KEY]"
 GoogleMaps(app)
 
 # Colours to be used to mark the different categories
